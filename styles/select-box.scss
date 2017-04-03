@@ -1,9 +1,10 @@
 $black:         #000;
 $border-color:  rgba(34, 36, 38, .15);
 $white:         #fff;
-$gray-color:    #aaa;
+$gray:          #aaa;
+$gray-light:    rgba(220, 220, 220, .15);
 $red:           #d0021b;
-$green:         #37d463;
+$blue:          #1dafec;
 
 .react-select-box {
   background-color: transparent;
@@ -17,7 +18,7 @@ $green:         #37d463;
   &::after {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 6px solid $gray-color;
+    border-top: 6px solid $gray;
     content: ' ';
     position: absolute;
     right: 10px;
@@ -70,7 +71,7 @@ $green:         #37d463;
     z-index: 3;
 
     &::before {
-      color: $gray-color;
+      color: $gray;
       content: '×';
       font-size: 18px;
       left: 4px;
@@ -128,7 +129,7 @@ $green:         #37d463;
 
     &:hover,
     &-selected {
-      background-color: $border-color;
+      background-color: $gray-light;
     }
 
     &:focus,
@@ -140,7 +141,7 @@ $green:         #37d463;
   &-close {
     background-color: transparent;
     border: 0;
-    color: $gray-color;
+    color: $gray;
     cursor: pointer;
     display: block;
     font-weight: bold;
@@ -165,7 +166,7 @@ $green:         #37d463;
     .react-select-box {
       &-label,
       &-close {
-        color: $gray-color;
+        color: $gray;
       }
     }
   }
