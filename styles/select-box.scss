@@ -178,9 +178,7 @@ $blue:          #1dafec;
         position: relative;
 
         &::before {
-          border: 1px solid $border-color;
-          border-radius: 4px;
-          color: $green;
+          color: $blue;
           content: ' ';
           cursor: pointer;
           font-family: 'Icons';
